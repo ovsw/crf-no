@@ -1,29 +1,20 @@
 <template>
+
   <div>
-    <div class="contentTwoCollumns">
-      <side-nav />
-
-      <BasicPageContent :main_content_matrix="pf.main_content_matrix" :headline="pf.headline" />
-
-      <side-bar-ql />
-
-    </div>
+    <BasicPageContent :main_content_matrix="pf.main_content_matrix" :headline="pf.headline" />
   </div>
 </template>
 
 <script>
 import BasicPageContent from "~/components/BasicPageContent.vue"
-import SideNav from "~/components/SideNav.vue"
-import SideBarQl from "~/components/SideBarQl.vue"
 
 const axios = require("axios")
 
 export default {
   name: "InnerPage",
+  layout: "leftcolumn",
   components: {
-    BasicPageContent,
-    SideNav,
-    SideBarQl
+    BasicPageContent
   },
   asyncData(context) {
     return axios

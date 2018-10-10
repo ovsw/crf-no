@@ -58,8 +58,19 @@
               </div>
               <!--end header-->
             </header>
+
+            <div>
+              <div class="contentTwoCollumns">
+                <side-nav />
+
+                <nuxt/>
+
+                <side-bar-ql />
+
+              </div>
+            </div>
   
-            <nuxt/>
+           
 
           </div>
           <!-- /.container -->
@@ -131,11 +142,15 @@
 <script>
 import TreeNavItem from "~/components/TreeNavItem.vue"
 import MainNavItem from "~/components/MainNavItem.vue"
+import SideNav from "~/components/SideNav.vue"
+import SideBarQl from "~/components/SideBarQl.vue"
 
 export default {
   components: {
     TreeNavItem,
-    MainNavItem
+    MainNavItem,
+    SideNav,
+    SideBarQl
   },
   data() {
     return {
