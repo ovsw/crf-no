@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <BasicPageContent :main_content_matrix="pf.main_content_matrix" :headline="pf.headline" />
+    <BasicPageContent :headline="pf.headline" :banner-image="pf.innerPageBanner" :main_content_matrix="pf.main_content_matrix" />
   </div>
 </template>
 
