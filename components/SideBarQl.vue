@@ -4,9 +4,11 @@
     <div class="boxWrapperInner">
 
       <div class="videoBoxInner">
-        <a href="https://www.youtube.com/watch?v=_2PDV-OWwP8&amp;autoplay=1&amp;rel=0" class="mainVideo"> <img id="videoBackgroundInner" :src="baseUrl+'/site/templates/images/video_bg.png'" alt=""> <img id="movieFilmInner" :src="baseUrl+'/site/templates/images/movieFilm.png'" alt="">
+        <a data-fancybox href="https://www.youtube.com/watch?v=_2PDV-OWwP8&amp;autoplay=1&amp;rel=0">
+          <img id="videoBackgroundInner" :src="baseUrl+'/site/templates/images/video_bg.png'" alt=""> <img id="movieFilmInner" :src="baseUrl+'/site/templates/images/movieFilm.png'" alt="">
           <span>Watch Our Video</span>
         </a>
+       
       </div>
 
       <ul class="imageBoxWrapperInner">

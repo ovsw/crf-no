@@ -121,6 +121,12 @@ module.exports = {
           "https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oswald:400|Fira+Sans:700"
       },
       {
+        rel: "stylesheet",
+        type: "text/css",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css"
+      },
+      {
         rel: "apple-touch-icon",
         sizes: "57x57",
         href: "/icons/apple-icon-57x57.png"
@@ -235,7 +241,10 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [{ src: "~/plugins/smartmenus.js", ssr: false }],
+  plugins: [
+    { src: "~/plugins/smartmenus.js", ssr: false },
+    { src: "~/plugins/fancybox.js", ssr: false }
+  ],
 
   /*
   ** Nuxt.js modules
@@ -260,17 +269,18 @@ module.exports = {
       new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
-        jquery: "jquery"
+        jquery: "jquery",
+        "window.jQuery": "jquery"
         // ...etc.
       })
     ],
-    vendor: ["jquery", "smartmenus"],
+    vendor: ["jquery", "smartmenus", "@fancyapps/fancybox"],
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
       if (ctx.isClient) {
-        config.entry.app.push("jquery", "smartmenus")
+        config.entry.app.push("jquery", "smartmenus", "@fancyapps/fancybox")
       }
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

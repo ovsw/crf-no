@@ -6,10 +6,8 @@
         <source src="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video.mp4" data-wf-ignore="">
         <source src="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video.ogv" data-wf-ignore="">
       </video>
-      <a href="#homepageVideo" class="fullVideoButton mainVideo">See Full Video</a>
-      <div id="homepageVideo" style="display:none">
-        <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/_2PDV-OWwP8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen/> -->
-      </div>
+      <a href="https://www.youtube.com/embed/_2PDV-OWwP8?rel=0&amp;showinfo=0" data-fancybox class="fullVideoButton mainVideo">See Full Video</a>
+      
     </div>
     <!-- /.hpVideoBg -->
 
