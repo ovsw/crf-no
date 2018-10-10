@@ -17,7 +17,6 @@ const createStore = () => {
         return axios
           .get(process.env.rootUrl + "/api/nav/")
           .then(res => {
-            //console.log("server response", res)
             const mainNav = res.data
             vuexContext.commit("getNav", mainNav)
           })

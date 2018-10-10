@@ -43,12 +43,9 @@ export default {
     return axios
       .get(process.env.apiUrl + "/")
       .then(res => {
-        //console.log("server response", res);
         return {
           pf: res.data.fields
         }
-        //const pageData = res.data.fields
-        //this.pf = pageData
       })
       .catch(err => context.error(err))
   }

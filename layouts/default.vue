@@ -156,7 +156,6 @@ export default {
         route => route.path === "/" + this.$route.params.section + "/"
       )
       if (currentPage) {
-        //console.log("currentpage:", currentPage)
         return currentPage.children
       } else {
         return undefined
