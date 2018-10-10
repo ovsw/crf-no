@@ -16,6 +16,19 @@ export default {
   components: {
     BasicPageContent
   },
+  head() {
+    let pageData = this.pf
+    return {
+      title: `${pageData.seo_title} - Camp Roosevelt Firebird`,
+      meta: [
+        {
+          hid: `description`,
+          name: "description",
+          content: `${pageData.seo_description}`
+        }
+      ]
+    }
+  },
   asyncData(context) {
     return axios
       .get(process.env.apiUrl + context.route.path)
@@ -31,6 +44,3 @@ export default {
   })
 }
 </script>
-
-<style scoped>
-</style>
