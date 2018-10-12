@@ -13,7 +13,7 @@
 
       <ul class="imageBoxWrapperInner">
         <li class="imageBoxleftInner">
-          <a href="https://www.camprooseveltfirebird.com/learn-about-camp/you-can-trust-us/helping-kids-grow/"> <img id="campDayInner" :src="baseUrl+ '/site/templates/images/helping-kids-grow.png'" alt="Growing at Camp Roosevelt-Firebird">
+          <a href="/learn-about-camp/you-can-trust-us/helping-kids-grow/"> <img id="campDayInner" :src="baseUrl+ '/site/templates/images/helping-kids-grow.png'" alt="Growing at Camp Roosevelt-Firebird">
             <span>Helping Kids Grow</span>
           </a>
         </li>
