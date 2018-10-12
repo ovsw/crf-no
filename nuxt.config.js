@@ -279,9 +279,9 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      if (ctx.isClient) {
-        config.entry.app.push("jquery", "smartmenus", "@fancyapps/fancybox")
-      }
+      // if (ctx.isClient) {
+      //   config.entry.app.push("jquery", "smartmenus", "@fancyapps/fancybox")
+      // }
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
