@@ -251,7 +251,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    "@nuxtjs/axios"
+    "@nuxtjs/axios",
+    "@nuxtjs/pwa"
     // "@nuxtjs/router"
   ],
   /*
@@ -292,5 +293,12 @@ module.exports = {
         })
       }
     }
+  },
+  manifest: {
+    name: "Camp Roosevelt-Firebird",
+    short_name: "CRF",
+    lang: "en-US",
+    orientation: "portrait",
+    theme_color: "red"
   }
 }
