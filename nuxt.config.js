@@ -300,5 +300,18 @@ module.exports = {
     lang: "en-US",
     orientation: "portrait",
     theme_color: "red"
+  },
+  workbox: {
+    runtimeCaching: [
+      {
+        // Should be a regex string. Compiles into new RegExp('https://my-cdn.com/.*')
+        urlPattern: "https://dev3.ovswebsites.com/api/.*",
+        // Defaults to `networkFirst` if omitted
+        handler: "cacheFirst",
+        // Defaults to `GET` if omitted
+        method: "GET"
+      }
+    ],
+    dev: true
   }
 }
