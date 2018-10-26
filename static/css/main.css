@@ -681,7 +681,7 @@ button {
   text-align: left;
   white-space: nowrap;
   text-decoration: none;
-  background: #3b5998 url(../images/icons/fb.png) 9px center no-repeat;
+  /* background: #3b5998 url(../images/icons/fb.png) 9px center no-repeat; */
   background-size: 13px;
   cursor: pointer;
 }
