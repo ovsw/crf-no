@@ -28,7 +28,7 @@ export default {
         return { message: "Unknown error" }
       }
     }
-  },
-  layout: "blog" // you can set a custom layout for the error page
+  }
+  //layout: "blog" // you can set a custom layout for the error page
 }
 </script>

@@ -1,11 +1,13 @@
 const pkg = require("./package")
 const webpack = require("webpack")
 
+require("dotenv").config()
+
 module.exports = {
   mode: "universal",
   env: {
-    apiUrl: "https://dev3.ovswebsites.com/api/pages",
-    rootUrl: "https://dev3.ovswebsites.com"
+    apiUrl: process.env.API_URL,
+    rootUrl: process.env.ROOT_URL
     // mainNav: [
     //   {
     //     title: "About Camp",
@@ -331,7 +333,7 @@ module.exports = {
         title: "Camp Roosevelt-Firebird Updates & News",
         message: "You are now subscribed to our Camp Updates!"
       },
-      setDefaultNotificationUrl: "https:"
+      setDefaultNotificationUrl: process.env.NOTIFICATION_BASE_URL
     }
   },
   workbox: {
