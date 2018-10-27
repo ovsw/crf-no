@@ -252,6 +252,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
+    "@nuxtjs/onesignal",
     "@nuxtjs/pwa"
     // "@nuxtjs/router"
   ],
@@ -300,6 +301,38 @@ module.exports = {
     lang: "en-US",
     orientation: "portrait",
     theme_color: "red"
+  },
+  oneSignal: {
+    init: {
+      appId: "5d08e9fe-cb1e-4182-8a0a-51f487e7aa79",
+      allowLocalhostAsSecureOrigin: true,
+      autoRegister: false,
+      notifyButton: {
+        enable: true
+      },
+      persistNotification: true,
+      promptOptions: {
+        actionMessage: "wants to show Camp Updates & News",
+        exampleNotificationTitleDesktop:
+          "This is an example Update Notification",
+        exampleNotificationMessageDesktop:
+          "Camp Updates Notifications will appear on your desktop.",
+        exampleNotificationTitleMobile:
+          "This is an example Update Notification",
+        exampleNotificationMessageMobile:
+          "Camp Update notifications will appear on your device.",
+        exampleNotificationCaption: "(you can unsubscribe at any time",
+        acceptButtonText: "Get Camp Notifications",
+        cancelButtonText: "No, thanks.",
+        showCredit: false
+      },
+      welcomeNotification: {
+        disable: false,
+        title: "Camp Roosevelt-Firebird Updates & News",
+        message: "You are now subscribed to our Camp Updates!"
+      },
+      setDefaultNotificationUrl: "https:"
+    }
   },
   workbox: {
     runtimeCaching: [
