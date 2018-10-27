@@ -174,6 +174,9 @@ export default {
         }
       })
     })
+    this.$OneSignal.push(() => {
+      this.$OneSignal.registerForPushNotifications()
+    })
   }
 }
 </script>
