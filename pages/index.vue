@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="hpVideoBg" style="padding:0 10px;position:relative;">
-      <video autoplay="autoplay" loop="loop" poster="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video-poster.jpg" style="background-image: url('https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video-cover.jpg'); width:100%">
-        <source src="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video.webm" data-wf-ignore="">
-        <source src="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video.mp4" data-wf-ignore="">
-        <source src="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video.ogv" data-wf-ignore="">
+      <video playsinline autoplay muted loop poster="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video-poster.jpg" style="background-image: url('https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video-cover.jpg'); width:100%">
+        <source src="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video.webm" type="video/webm;">
+        <source src="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video.mp4" type="video/mp4;">
+        <source src="https://crfvideo-ac97.kxcdn.com/camp-roosevelt-firebird-intro-video.ogv" type="video/ogv;">
       </video>
       <a href="https://www.youtube.com/embed/_2PDV-OWwP8?rel=0&amp;showinfo=0" data-fancybox class="fullVideoButton mainVideo">See Full Video</a>
       
