@@ -314,17 +314,16 @@ module.exports = {
       },
       persistNotification: true,
       promptOptions: {
-        actionMessage: "wants to show Camp Updates & News",
-        exampleNotificationTitleDesktop:
-          "This is an example Update Notification",
+        actionMessage:
+          "We'd like to show you notifications for the latest Camp News and Updates.",
+        exampleNotificationTitleDesktop: "This is an example Notification",
         exampleNotificationMessageDesktop:
           "Camp Updates Notifications will appear on your desktop.",
-        exampleNotificationTitleMobile:
-          "This is an example Update Notification",
+        exampleNotificationTitleMobile: "This is an example Notification",
         exampleNotificationMessageMobile:
           "Camp Update notifications will appear on your device.",
         exampleNotificationCaption: "(you can unsubscribe at any time",
-        acceptButtonText: "Get Camp Notifications",
+        acceptButtonText: "ALLOW",
         cancelButtonText: "No, thanks.",
         showCredit: false
       },

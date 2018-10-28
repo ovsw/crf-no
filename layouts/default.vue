@@ -175,7 +175,7 @@ export default {
       })
     })
     this.$OneSignal.push(() => {
-      this.$OneSignal.registerForPushNotifications()
+      this.$OneSignal.showHttpPrompt()
     })
   }
 }
