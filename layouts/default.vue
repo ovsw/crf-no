@@ -6,7 +6,7 @@
       <div class="containerLeftWrapper">
         <div class="containerRightWrapper">
           <div class="container">
-            <header />
+            <Header />
             
 
             <nuxt/>

@@ -6,7 +6,7 @@
       <div class="containerLeftWrapper">
         <div class="containerRightWrapper">
           <div class="container">
-            <header />
+            <Header />
 
             <div>
               <div class="contentTwoCollumns">
@@ -97,7 +97,7 @@ import SideBarQl from "~/components/SideBarQl.vue"
 export default {
   components: {
     Header,
-    MainNavItem,
+    TreeNavItem,
     SideNav,
     SideBarQl
   },
